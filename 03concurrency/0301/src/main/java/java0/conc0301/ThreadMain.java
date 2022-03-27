@@ -12,6 +12,7 @@ public class ThreadMain {
         System.out.println("这是主线程：");
 
         ThreadB threadB = new ThreadB();
+//        threadB.run();
         new Thread(threadB).start();
         System.out.println("这是主线程：");
 

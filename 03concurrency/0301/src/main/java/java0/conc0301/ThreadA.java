@@ -9,6 +9,6 @@ public class ThreadA extends Thread {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("这是线程A");
+        System.out.println("这是线程A:"+Thread.currentThread().getName());
     }
 }

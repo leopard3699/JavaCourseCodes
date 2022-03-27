@@ -1,11 +1,14 @@
 package java0.conc0303.future;
 
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Vector;
 import java.util.concurrent.CompletableFuture;
 
 public class CompletableFutureDemo {
     
     public static void main(String[] args){
-        
+
         // 1.变换结果
         System.out.println("=====>1.变换结果");
         String result1 = CompletableFuture.supplyAsync(()->{return "Hello ";}).thenApplyAsync(v -> v + "world").join();

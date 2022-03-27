@@ -10,7 +10,7 @@ public class ThreadMain2 {
         }
 
         try {
-            Thread.sleep(10000);
+            Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -26,6 +26,7 @@ public class ThreadMain2 {
         System.out.println("返回该线程所属的线程组：" + threadMain.getThreadGroup());
         System.out.println("测试线程是否为守护线程：" + threadMain.isDaemon());
 
+        System.out.println(Thread.getAllStackTraces());
 
 //        try {
 //            Thread.sleep(10000);

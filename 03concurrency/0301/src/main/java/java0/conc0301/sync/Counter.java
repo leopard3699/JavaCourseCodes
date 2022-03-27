@@ -1,5 +1,9 @@
 package java0.conc0301.sync;
 
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+
 public class Counter {
     
     private int sum = 0;

@@ -14,8 +14,8 @@ public class Join {
             for (int i = 0; i < 100; i++) {
                 if (i == 20) {
                     try {
-                        oo.wait(0);
-                        //thread1.join();
+//                        oo.wait(0); //释放oo锁，跳出循环
+                        thread1.join();//不会释放oo锁，会停在这
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
